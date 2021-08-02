@@ -9,7 +9,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
-    <title>BlossoM998&#39;s Studio</title>
+    <title>Linux常用命令与脚本 · BlossoM998&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -251,12 +251,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >BlossoM998&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">Linux常用命令与脚本</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>BlossoM998's Studio.</a>
 </header>
@@ -270,97 +281,280 @@
 
 
 
+height:50vh;
+
 >
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-placeholder"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
+            Linux常用命令与脚本
+            <!-- 404 -->
+            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+                <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = Linux>Linux</a>
+    
+</div>
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2021/07/22</span>
+                
+                <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                    <span class="iconfont-archer">&#xe602;</span>
+                    <span id="busuanzi_value_page_pv"></span>
+                </span>
+                
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                    <span class="shareText">Share</span>
+                    <ul class="shareList">
+                        <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                            <div class="share-qrcode"></div>
+                        </li>
+                        <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                        <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                        <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                        <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                    </ul>
+                </span>
+            </div>
         
     </div>
 </div>
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
 
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2021/07/28/Mac开发环境配置/" >
-                
-                    <span>Mac开发环境配置</span>
-            </a>
-            <div class="abstract-content">
-                本文用来记录MacOS系统常见的问题和相关环境配置
-Homebrew安装Homebrew是Mac平台用来维护安装app的一个资源管理器，可以用它来安装各种Mac上需要的包或者app，而且方便管理。
-官网地址：https://brew.sh/index_zh-cn
-安装命令/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;命令作用是用bash命令运行下载下来的sh脚本进行安装
-常用功能，命令brew install [forumla...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/07/28</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = 积累>积累</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = MacOS>MacOS</a>
-    
-</div>
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2021/07/20/js常用技巧/" >
-                
-                    <span>js常用技巧</span>
-            </a>
-            <div class="abstract-content">
-                本文用来积累实用的JS技巧
-便于维护的常量数组1234let str = 'Name,Sex,Age'const arr = str.splic(',') // ['Name','Sex','Age']
-这样写的好处在于便于后续添加数组，而且可以方便修改顺序以及添加filter等逻辑
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>本文用来积累记录学习Linux脚本和常用命令</p>
+<h2 id="Mac-OS-内置的脚本整理"><a href="#Mac-OS-内置的脚本整理" class="headerlink" title="Mac OS 内置的脚本整理"></a>Mac OS 内置的脚本整理</h2><p> mac os /bin 目录下的命令</p>
+<h4 id="cat-concatenate-组合文件"><a href="#cat-concatenate-组合文件" class="headerlink" title="cat (concatenate)  组合文件"></a>cat (concatenate)  组合文件</h4><pre><code>NAME
+cat -- concatenate and print files
 
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/07/20</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
+SYNOPSIS
+cat [-benstuv] [file ...]
+
+DESCRIPTION
+The cat utility reads files sequentially, writing them to the standard output.  The file operands are
+processed in command-line order.  If file is a single dash (`-&apos;) or absent, cat reads from the standard
+input.  If file is a UNIX domain socket, cat connects to it and then reads it until EOF.  This comple-
+ments the UNIX domain binding capability available in inetd(8).
+
+ The options are as follows:
+
+ -b      Number the non-blank output lines, starting at 1.
+
+ -e      Display non-printing characters (see the -v option), and display a dollar sign (`$&apos;) at the end
+         of each line.
+
+ -n      Number the output lines, starting at 1.
+
+ -s      Squeeze multiple adjacent empty lines, causing the output to be single spaced.
+
+ -t      Display non-printing characters (see the -v option), and display tab characters as `^I&apos;.
+
+ -u      Disable output buffering.
+
+ -v      Display non-printing characters so they are visible.  Control characters print as `^X&apos; for con-
+         trol-X; the delete character (octal 0177) prints as `^?&apos;.  Non-ASCII characters (with the high
+         bit set) are printed as `M-&apos; (for meta) followed by the character for the low 7 bits.
+</code></pre><h4 id="chmod-change-file-mode-修改文件权限"><a href="#chmod-change-file-mode-修改文件权限" class="headerlink" title="chmod (change file mode) 修改文件权限"></a>chmod (change file mode) 修改文件权限</h4><pre><code>NAME
+chmod -- change file modes or Access Control Lists
+
+SYNOPSIS
+chmod [-fv] [-R [-H | -L | -P]] mode file ...
+chmod [-fv] [-R [-H | -L | -P]] [-a | +a | =a] ACE file ...
+chmod [-fhv] [-R [-H | -L | -P]] [-E] file ...
+chmod [-fhv] [-R [-H | -L | -P]] [-C] file ...
+chmod [-fhv] [-R [-H | -L | -P]] [-N] file ...
+
+DESCRIPTION
+The chmod utility modifies the file mode bits of the listed files as specified by the mode operand. It may also be used to modify the Access
+Control Lists (ACLs) associated with the listed files.
+
+ The generic options are as follows:
+
+ -f      Do not display a diagnostic message if chmod could not modify the mode for file, nor modify the exit status to reflect such failures.
+
+ -H      If the -R option is specified, symbolic links on the command line are followed and hence unaffected by the command.  (Symbolic links
+         encountered during tree traversal are not followed.)
+
+ -h      If the file is a symbolic link, change the mode of the link itself rather than the file that the link points to.
+
+ -L      If the -R option is specified, all symbolic links are followed.
+
+ -P      If the -R option is specified, no symbolic links are followed.  This is the default.
+
+ -R      Change the modes of the file hierarchies rooted in the files, instead of just the files themselves.  Beware of unintentionally matching
+         the ``..&apos;&apos; hard link to the parent directory when using wildcards like ``.*&apos;&apos;.
+
+ -v      Cause chmod to be verbose, showing filenames as the mode is modified.  If the -v flag is specified more than once, the old and new modes
+         of the file will also be printed, in both octal and symbolic notation.
+
+ The -H, -L and -P options are ignored unless the -R option is specified.  In addition, these options override each other and the command&apos;s
+ actions are determined by the last one specified.
+
+ If chmod receives a SIGINFO signal (see the status argument for stty(1)), then the current filename as well as the old and new modes are dis-
+ played.
+
+ Only the owner of a file or the super-user is permitted to change the mode of a file.
+</code></pre><h4 id="cp-copy-file-拷贝文件"><a href="#cp-copy-file-拷贝文件" class="headerlink" title="cp copy file 拷贝文件"></a>cp copy file 拷贝文件</h4><pre><code>NAME
+cp -- copy files
+
+SYNOPSIS
+cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file target_file
+cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file ... target_directory
+
+DESCRIPTION
+In the first synopsis form, the cp utility copies the contents of the source_file to the target_file.  In the second synopsis form, the contents
+of each named source_file is copied to the destination target_directory.  The names of the files themselves are not changed.  If cp detects an
+attempt to copy a file to itself, the copy will fail.
+
+ The following options are available:
+
+ -a    Same as -pPR options. Preserves structure and attributes of files but not directory structure.
+
+ -f    If the destination file cannot be opened, remove it and create a new file, without prompting for confirmation regardless of its permis-
+       sions.  (The -f option overrides any previous -n option.)
+
+       The target file is not unlinked before the copy.  Thus, any existing access rights will be retained.
+
+ -H    If the -R option is specified, symbolic links on the command line are followed.  (Symbolic links encountered in the tree traversal are not
+       followed.)
+
+ -i    Cause cp to write a prompt to the standard error output before copying a file that would overwrite an existing file.  If the response from
+       the standard input begins with the character `y&apos; or `Y&apos;, the file copy is attempted.  (The -i option overrides any previous -n option.)
+
+ -L    If the -R option is specified, all symbolic links are followed.
+
+ -n    Do not overwrite an existing file.  (The -n option overrides any previous -f or -i options.)
+
+ -P    If the -R option is specified, no symbolic links are followed.  This is the default.
+
+ -p    Cause cp to preserve the following attributes of each source file in the copy: modification time, access time, file flags, file mode, user
+       ID, and group ID, as allowed by permissions.  Access Control Lists (ACLs) and Extended Attributes (EAs), including resource forks, will
+       also be preserved.
+
+       If the user ID and group ID cannot be preserved, no error message is displayed and the exit value is not altered.
+
+       If the source file has its set-user-ID bit on and the user ID cannot be preserved, the set-user-ID bit is not preserved in the copy&apos;s per-
+       missions.  If the source file has its set-group-ID bit on and the group ID cannot be preserved, the set-group-ID bit is not preserved in
+       the copy&apos;s permissions.  If the source file has both its set-user-ID and set-group-ID bits on, and either the user ID or group ID cannot
+       be preserved, neither the set-user-ID nor set-group-ID bits are preserved in the copy&apos;s permissions.
+
+ -R    If source_file designates a directory, cp copies the directory and the entire subtree connected at that point.  If the source_file ends in
+       a /, the contents of the directory are copied rather than the directory itself.  This option also causes symbolic links to be copied,
+       rather than indirected through, and for cp to create special files rather than copying them as normal files.  Created directories have the
+       same mode as the corresponding source directory, unmodified by the process&apos; umask.
+
+       In -R mode, cp will continue copying even if errors are detected.
+
+       Note that cp copies hard-linked files as separate files.  If you need to preserve hard links, consider using tar(1), cpio(1), or pax(1)
+       instead.
+
+ -v    Cause cp to be verbose, showing files as they are copied.
+
+ -X    Do not copy Extended Attributes (EAs) or resource forks.
+
+ -c    copy files using clonefile(2)
+
+ For each destination file that already exists, its contents are overwritten if permissions allow.  Its mode, user ID, and group ID are unchanged
+ unless the -p option was specified.
+
+ In the second synopsis form, target_directory must exist unless there is only one named source_file which is a directory and the -R flag is
+ specified.
+
+ If the destination file does not exist, the mode of the source file is used as modified by the file mode creation mask (umask, see csh(1)).  If
+ the source file has its set-user-ID bit on, that bit is removed unless both the source file and the destination file are owned by the same user.
+ If the source file has its set-group-ID bit on, that bit is removed unless both the source file and the destination file are in the same group
+ and the user is a member of that group.  If both the set-user-ID and set-group-ID bits are set, all of the above conditions must be fulfilled or
+</code></pre><h4 id="echo-打印内容到控制台"><a href="#echo-打印内容到控制台" class="headerlink" title="echo 打印内容到控制台"></a>echo 打印内容到控制台</h4><pre><code>NAME
+echo -- write arguments to the standard output
+
+SYNOPSIS
+echo [-n] [string ...]
+
+DESCRIPTION
+The echo utility writes any specified operands, separated by single blank
+(` &apos;) characters and followed by a newline (`\n&apos;) character, to the stan-
+dard output.
+
+ The following option is available:
+
+ -n    Do not print the trailing newline character.  This may also be
+       achieved by appending `\c&apos; to the end of the string, as is done by
+       iBCS2 compatible systems.  Note that this option as well as the
+       effect of `\c&apos; are implementation-defined in IEEE Std 1003.1-2001
+       (``POSIX.1&apos;&apos;) as amended by Cor. 1-2002.  Applications aiming for
+       maximum portability are strongly encouraged to use printf(1) to
+       suppress the newline character.
+
+ Some shells may provide a builtin echo command which is similar or iden-
+ tical to this utility.  Most notably, the builtin echo in sh(1) does not
+ accept the -n option.  Consult the builtin(1) manual page.
+</code></pre><p>dash<br>date<br>dd<br>df</p>
+<p>ed<br>expr<br>hostname<br>kill<br>ksh<br>launchctl<br>link<br>ln<br>ls<br>mkdir<br>mv<br>pax<br>ps<br>pwd<br>rm<br>rmdir<br>sh<br>sleep<br>stty<br>sync<br>test<br>unlink<br>wait4path</p>
+<h4 id="控制台命令"><a href="#控制台命令" class="headerlink" title="控制台命令"></a>控制台命令</h4><p>zsh<br>bash<br>csh<br>tcsh</p>
+
+    </article>
+    <!-- 前后页  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+            <a href= "/2021/07/28/Mac开发环境配置/" title= Mac开发环境配置 >
+                <div class="nextSlogan">Next Post</div>
+
+                    <div class="nextTitle">Mac开发环境配置</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+            <a href= "/2021/07/20/js常用技巧/" title= js常用技巧 >
+                <div class="prevSlogan">Previous Post</div>
+
+                    <div class="prevTitle">js常用技巧</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = js>js</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = 积累>积累</a>
+    <!--PC版-->
+
+    <!--PC版-->
+
+
     
-</div>
-                
-            </div>
-        </article>
-    
-    <!-- paginator  -->
-    
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -433,6 +627,24 @@ Homebrew安装Homebrew是Mac平台用来维护安装app的一个资源管理器�
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Mac-OS-内置的脚本整理"><span class="toc-number">1.</span> <span class="toc-text">Mac OS 内置的脚本整理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#cat-concatenate-组合文件"><span class="toc-number">1.0.1.</span> <span class="toc-text">cat (concatenate)  组合文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#chmod-change-file-mode-修改文件权限"><span class="toc-number">1.0.2.</span> <span class="toc-text">chmod (change file mode) 修改文件权限</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cp-copy-file-拷贝文件"><span class="toc-number">1.0.3.</span> <span class="toc-text">cp copy file 拷贝文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#echo-打印内容到控制台"><span class="toc-number">1.0.4.</span> <span class="toc-text">echo 打印内容到控制台</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#控制台命令"><span class="toc-number">1.0.5.</span> <span class="toc-text">控制台命令</span></a></li></ol></li></ol></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -687,6 +899,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
     
     </body>
 </html>
